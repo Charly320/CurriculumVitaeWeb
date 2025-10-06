@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>CurriculumVitaeWeb</title>
-  <base href="/CurriculumVitaeWeb/">
+  <base href="https://charly320.github.io/CurriculumVitaeWeb/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0ea5e9">
   <link rel="icon" type="image/x-icon" href="favicon.ico">

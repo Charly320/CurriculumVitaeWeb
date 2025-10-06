@@ -2,7 +2,7 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/CurriculumVitaeWeb/',
+  baseHref: 'https://charly320.github.io/CurriculumVitaeWeb/',
   locale: undefined,
   routes: [
   {
@@ -38,13 +38,13 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 33405, hash: '01b7a48d00c3096664c55451945e35dc690a16376fc172ea3c62d46e56bc6fab', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 33287, hash: 'fa507f1b80c151b16104ab22a3d52d9d5ee8a762bd3c7fe7bda8bb5750142c4f', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'about/index.html': {size: 86004, hash: '7bfdde44b061ef959f07e03e80072d1ff36d7ed32faf24dae2ea946253cbdf8e', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
-    'contact/index.html': {size: 78788, hash: 'b101033b0cc46b49e564d8ae1f3aebeb3b3fe134e903ef288b5eaaa4486846a4', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
-    'experience/index.html': {size: 86341, hash: '2a3e9c5befac56d0077b8541d5a7b73f321600b75883886e46ad893c1b3f3fca', text: () => import('./assets-chunks/experience_index_html.mjs').then(m => m.default)},
-    'skills/index.html': {size: 88440, hash: '2c063f149d09dfb9738b462b491b7243e375e0145ce9fda58d89559268664766', text: () => import('./assets-chunks/skills_index_html.mjs').then(m => m.default)},
-    'education/index.html': {size: 83654, hash: '062242421127c972eabab78908801eaf17ae3fbe0c268a7ca7e883775ba6d456', text: () => import('./assets-chunks/education_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 33432, hash: '224088af053320e4318ac9dcdc1cc9bdc39c2844140801378426540b82e39063', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 33314, hash: 'd6ce3d7cebde251120976482b6e580985f66e16aeef6b39008057a88b1b8c3cd', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'experience/index.html': {size: 86665, hash: '3d826643e45d84ceb5d950b717b776095efc8dcd1476881265943b1aaac1baa9', text: () => import('./assets-chunks/experience_index_html.mjs').then(m => m.default)},
+    'education/index.html': {size: 83978, hash: '913a6e32a83c611c489d26fd3d8453d2be4a43cceca174ba6fd82338809c6fe3', text: () => import('./assets-chunks/education_index_html.mjs').then(m => m.default)},
+    'about/index.html': {size: 86328, hash: '2b648107efc9a85a8e98a5b005681ba1cfae02bb3e97116b69534af94a1770ee', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
+    'skills/index.html': {size: 88764, hash: '56f5c88a951277523cbe4cc698637485e27d76029e64f90b3e55f44583f34f25', text: () => import('./assets-chunks/skills_index_html.mjs').then(m => m.default)},
+    'contact/index.html': {size: 79112, hash: '4e12fb4c87dbc74f97702f719717f0f8320c8cbd95bb0dee2d4c773a262666a6', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
     'styles-B24C25XY.css': {size: 1840, hash: '+/lPnE5FBi8', text: () => import('./assets-chunks/styles-B24C25XY_css.mjs').then(m => m.default)}
   },
 };

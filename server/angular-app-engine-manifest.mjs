@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/CurriculumVitaeWeb',
+  basePath: 'https://charly320.github.io/CurriculumVitaeWeb',
   supportedLocales: {
   "en-US": ""
 },
