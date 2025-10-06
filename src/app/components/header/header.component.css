@@ -1,0 +1,26 @@
+.cv-toolbar {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(15, 23, 42, .75);
+  backdrop-filter: saturate(120%) blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.brand { display: inline-flex; align-items: center; gap: .6rem; color: var(--text); font-weight: 600; }
+.brand .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--primary); box-shadow: 0 0 10px var(--primary); }
+.spacer { flex: 1; }
+.links { display: none; gap: .25rem; }
+.only-mobile { display: inline-flex; }
+
+@media (min-width: 900px) {
+  .links { display: inline-flex; }
+  .only-mobile { display: none; }
+}
+
+.mobile-drawer {
+  display: grid; gap: .25rem; padding: .75rem 1rem; border-bottom: 1px solid rgba(255,255,255,.06);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--card) 100%);
+  transform-origin: top; transform: scaleY(0); height: 0; overflow: hidden;
+  transition: transform .2s ease, height .2s ease;
+}
+.mobile-drawer.open { transform: scaleY(1); height: auto; }
+.mobile-drawer a { padding: .6rem .5rem; border-radius: 8px; }
+.mobile-drawer a:hover { background: rgba(255,255,255,.04); }

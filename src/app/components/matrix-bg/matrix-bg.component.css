@@ -1,0 +1,16 @@
+/* Full-viewport fixed canvas, behind all content, non-interactive */
+:host {
+  position: fixed;
+  inset: 0;
+  display: block;
+  z-index: 0; /* Ensure it's behind app content */
+  pointer-events: none; /* Do not block clicks/hover */
+}
+
+.matrix-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000; /* solid black background */
+}

@@ -1,0 +1,26 @@
+{
+  "personalInfo": {
+    "name": "Carlos Villagran Gatica",
+    "title": "Software Developer, Senior Full‑stack Developer",
+    "aboutMe": "Ever since I had my first Nintendo as a kid, I knew technology was my path. That passion led me to study Computer Engineering at INACAP, where I not only excelled academically but also organized events as a Microsoft Student Partner. I began my career at Stericycle, an international company in biohazard waste management headquartered in Chile, where I was part of the development team working as a QA Tester for projects in India. Later, I joined the Chilean Army, helping build the core system for military personnel management—a key software that centralizes critical information such as ratings, sanctions, studies, and performance. I'm currently a Full‑stack Developer at ISAPRE Consalud, working in an agile, multidisciplinary, and self‑managed team. There, I’ve strengthened my skills in agile methodologies and software development across platforms and technologies. Beyond the technical side, I stand out for my interpersonal skills: I connect easily with people, communicate complex topics clearly, and always focus on solutions over problems. Always looking for new challenges and opportunities to keep growing."
+  },
+  "experience": [
+    {"company": "Isapre Banmédica", "role": "Senior Full‑stack Developer", "period": "Jul. 2025 – Present", "location": "Las Condes, Santiago Metropolitan Region, Chile", "type": "Hybrid", "description": ""},
+    {"company": "Isapre Consalud", "role": "Senior Developer", "period": "Aug. 2021 – Jun. 2025", "location": "Santiago, Santiago Metropolitan Region, Chile", "description": ""},
+    {"company": "Ejército de Chile (Chilean Army)", "role": "Computer Engineer", "period": "Jan. 2018 – Oct. 2021", "location": "Santiago, Santiago Metropolitan Region, Chile", "description": ""},
+    {"company": "Stericycle", "role": "Developer", "period": "Jul. 2016 – Jul. 2017", "location": "Valparaíso Province – Viña del Mar, Chile", "description": "QA Tester for the Core Business built in C# + SQL Server 2014/2016; coordinator for Key Users and communication of issues detected by the company to developers. Supported the IS – Systems area implementing features and improvements to the current Core Business using PHP + Oracle."},
+    {"company": "Falabella Retail", "role": "Computing and Electronics Sales Associate", "period": "Aug. 2013 – Jan. 2016", "location": "Chillán, Chile", "description": "Sales associate in computing and electronics with broad experience selling both tangible and intangible products for more than two years."}
+  ],
+  "education": [
+    {"institution": "INACAP", "degree": "Computer Engineer", "period": "2011 – 2016", "activities": "Microsoft Student Partner (MSP) 2011–2015; presenter on new Microsoft technologies; Windows 8.1 apps in C# and XAML; Xamarin mobile apps in C#; instructor at Microsoft Virtual Academy workshops; Active Manager representative for Microsoft Office 365 in 2015."},
+    {"institution": "Universidad Tecnológica de Chile, Chillán Campus", "degree": "Computer Engineer", "activities": "IT mentor at Microsoft Virtual Academy workshop (2014); outstanding student in Computer Science (2013–2014)."},
+    {"institution": "Cisco Networking Academy", "degree": "CCNA: Network Fundamentals, Computer Engineering"},
+    {"institution": "Cisco Networking Academy", "degree": "IT Essentials: PC Hardware and Software, Computer Engineering"}
+  ],
+  "skills": ["C#", "Oracle SQL", "PL/SQL", "Angular", "REST APIs", "Teamwork", "Digital transformation", "Analytical skills"],
+  "certifications": [
+    {"name": "Oracle Database 12c R2: SQL and PL/SQL Fundamentals Ed 2 LVC PRV", "issuer": "Oracle", "date": "Oct. 2020", "credentialId": "9491118"},
+    {"name": "SCRUM FOUNDATION PROFESSIONAL CERTIFICATE", "issuer": "CertiProf", "date": "Apr. 2019", "credentialId": "31555371673312"},
+    {"name": "Basic Accounting", "issuer": "keep learning"}
+  ]
+}

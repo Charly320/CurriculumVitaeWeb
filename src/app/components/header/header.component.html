@@ -1,0 +1,37 @@
+<mat-toolbar color="primary" class="cv-toolbar">
+  <button mat-icon-button class="only-mobile" (click)="mobileOpen.set(!mobileOpen())" aria-label="Open menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <a class="brand" routerLink="/about">
+    <span class="dot"></span>
+    <span class="name">{{ name }}</span>
+    <span class="muted" style="margin-left:.5rem;color:var(--muted);font-weight:500">— {{ title }}</span>
+  </a>
+
+  <span class="spacer"></span>
+
+  <nav class="links">
+    <a mat-button routerLink="/about">{{ 'header.navigation.about' | translate }}</a>
+    <a mat-button routerLink="/experience">{{ 'header.navigation.experience' | translate }}</a>
+    <a mat-button routerLink="/skills">{{ 'header.navigation.skills' | translate }}</a>
+    <a mat-button routerLink="/education">{{ 'header.navigation.education' | translate }}</a>
+    <a mat-stroked-button color="accent" routerLink="/contact">{{ 'header.navigation.contact' | translate }}</a>
+  </nav>
+
+  <button mat-icon-button [matMenuTriggerFor]="langMenu" aria-label="Language">
+    <mat-icon>translate</mat-icon>
+  </button>
+  <mat-menu #langMenu="matMenu">
+    <button mat-menu-item (click)="changeLanguage('en')">English</button>
+    <button mat-menu-item (click)="changeLanguage('es')">Español</button>
+  </mat-menu>
+</mat-toolbar>
+
+<div class="mobile-drawer" [class.open]="mobileOpen()">
+  <a routerLink="/about" (click)="mobileOpen.set(false)">{{ 'header.navigation.about' | translate }}</a>
+  <a routerLink="/experience" (click)="mobileOpen.set(false)">{{ 'header.navigation.experience' | translate }}</a>
+  <a routerLink="/skills" (click)="mobileOpen.set(false)">{{ 'header.navigation.skills' | translate }}</a>
+  <a routerLink="/education" (click)="mobileOpen.set(false)">{{ 'header.navigation.education' | translate }}</a>
+  <a routerLink="/contact" (click)="mobileOpen.set(false)">{{ 'header.navigation.contact' | translate }}</a>
+</div>

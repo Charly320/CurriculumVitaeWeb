@@ -1,0 +1,36 @@
+/* Terminal window container similar to About Me */
+.terminal-window {
+  border-radius: 12px;
+  background: #0b1220;
+  color: #e5e7eb;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  font-family: 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
+}
+
+.terminal-header {
+  display: flex; align-items: center; gap: .5rem;
+  height: 40px; padding: 0 .75rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+.terminal-title { margin-left: auto; font-size: .95rem; color: #cbd5e1; display: flex; align-items: center; }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot-close { background: #ff5f56; }
+.dot-min { background: #ffbd2e; }
+.dot-max { background: #27c93f; }
+.terminal-body { padding: 1rem; }
+
+/* Cards inside terminal body */
+.card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.terminal-window { overflow: hidden; }
+.row-top { display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+.role { font-weight: 700; color: #e2e8f0; }
+.company, .period { color: #9CA3AF; }
+.meta { margin-top: .35rem; color: #a3b0c2; }
+.desc { margin-top: .5rem; line-height: 1.5; color: #e5e7eb; }
+
+@media (max-width: 768px) {
+  .terminal-body { padding: .85rem; }
+}

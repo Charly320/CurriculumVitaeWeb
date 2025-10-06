@@ -1,0 +1,19 @@
+<section class="skills-section container">
+  <div class="skills-grid">
+    <div class="terminal-window" *ngFor="let card of skillCards()">
+      <div class="terminal-header" aria-hidden="true">
+        <span class="dot dot-close"></span>
+        <span class="dot dot-min"></span>
+        <span class="dot dot-max"></span>
+        <div class="terminal-title"><mat-icon style="font-size:18px;vertical-align:middle;margin-right:.35rem">{{ card.icon }}</mat-icon>{{ card.name }}</div>
+      </div>
+      <div class="terminal-body">
+        <div class="skill-line">
+          <span class="prompt">$</span>
+          <span class="cmd">info</span>
+          <span class="output">{{ card.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

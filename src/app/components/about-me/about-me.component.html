@@ -1,0 +1,71 @@
+<section class="container">
+  <div class="about terminal-layout">
+    <!-- Avatar column (left on desktop) -->
+    <div class="avatar-col">
+      <div class="avatar-wrap">
+        <img [src]="avatar" alt="avatar" />
+      </div>
+    </div>
+
+    <!-- Terminal window column (right on desktop) -->
+    <div class="terminal-col">
+      <div class="terminal-window">
+        <!-- Terminal window header with control dots -->
+        <div class="terminal-header" aria-hidden="true">
+          <span class="dot dot-close"></span>
+          <span class="dot dot-min"></span>
+          <span class="dot dot-max"></span>
+          <div class="terminal-title">bash — {{ name | lowercase }}</div>
+        </div>
+
+        <!-- Terminal body -->
+        <div class="terminal-body">
+          <!-- Prompted intro with name/role/location -->
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="cmd">whoami</span>
+            <span class="output">{{ name }}</span>
+          </div>
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="cmd">echo</span>
+            <span class="arg">"{{ role }}"</span>
+          </div>
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="cmd">pwd</span>
+            <span class="path">/{{ location }}</span>
+          </div>
+
+          <!-- About summary as a multi-line log with a blinking cursor at the end -->
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="cmd">cat</span>
+            <span class="path"> ./about.txt</span>
+          </div>
+          <p class="summary">
+            {{ aboutText }}<span class="cursor" aria-hidden="true">█</span>
+          </p>
+
+          <!-- Badges as command-like tags -->
+          <div class="badges">
+            <span class="badge">npm i -g Angular</span>
+            <span class="badge">tsc --project</span>
+            <span class="badge">rxjs/operators</span>
+            <span class="badge">node --version</span>
+          </div>
+
+          <!-- Highlights as command output lines -->
+          <div class="line spacer"></div>
+          <div class="line comment"># {{ 'aboutMe.title' | translate }}</div>
+          <ul class="terminal-list">
+            <li><span class="prompt">&gt;</span> 8+ years building SPAs and design systems.</li>
+            <li><span class="prompt">&gt;</span> Lead Angular migrations and performance tuning.</li>
+            <li><span class="prompt">&gt;</span> Mentor teams, code reviews, and DX improvements.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>

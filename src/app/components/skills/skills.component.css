@@ -1,0 +1,38 @@
+/* Container */
+.skills-section { margin: 2rem auto; }
+
+/* Grid of terminal windows */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+
+/* Terminal look & feel (matching About Me / Experience) */
+.terminal-window {
+  border-radius: 12px;
+  background: #0b1220;
+  color: #e5e7eb;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  font-family: 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
+  overflow: hidden;
+}
+.terminal-header {
+  display: flex; align-items: center; gap: .5rem;
+  height: 40px; padding: 0 .75rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+.terminal-title { margin-left: auto; font-size: .95rem; color: #cbd5e1; display: flex; align-items: center; }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot-close { background: #ff5f56; }
+.dot-min { background: #ffbd2e; }
+.dot-max { background: #27c93f; }
+.terminal-body { padding: 1rem; }
+
+/* Line styling inside terminal */
+.skill-line { display: flex; gap: .5rem; align-items: baseline; }
+.prompt { color: #22c55e; }
+.cmd { color: #86efac; }
+.output { color: #e5e7eb; }
+
+@media (max-width: 420px) {
+  .skills-grid { gap: 12px; }
+}
