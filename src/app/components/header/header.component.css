@@ -3,12 +3,25 @@
   background: rgba(15, 23, 42, .75);
   backdrop-filter: saturate(120%) blur(8px);
   border-bottom: 1px solid rgba(255,255,255,.06);
+  display: flex; align-items: center; gap: .5rem;
+  overflow: hidden;
 }
-.brand { display: inline-flex; align-items: center; gap: .6rem; color: var(--text); font-weight: 600; }
+.brand { display: inline-flex; align-items: center; gap: .6rem; color: var(--text); font-weight: 600; min-width: 0; }
 .brand .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--primary); box-shadow: 0 0 10px var(--primary); }
-.spacer { flex: 1; }
+.spacer { flex: 1; min-width: .5rem; }
 .links { display: none; gap: .25rem; }
 .only-mobile { display: inline-flex; }
+
+/* Prevent horizontal scrolling globally on small screens */
+:host, :host * { max-width: 100vw; }
+
+@media (max-width: 899px) {
+  .cv-toolbar { justify-content: center; }
+  .brand { flex: 1; justify-content: center; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .spacer { display: none; }
+  /* Keep language button visible on the right without pushing layout */
+  [mat-menu-trigger-for], [matmenutriggerfor] { margin-left: auto; }
+}
 
 @media (min-width: 900px) {
   .links { display: inline-flex; }
@@ -24,3 +37,6 @@
 .mobile-drawer.open { transform: scaleY(1); height: auto; }
 .mobile-drawer a { padding: .6rem .5rem; border-radius: 8px; }
 .mobile-drawer a:hover { background: rgba(255,255,255,.04); }
+
+/* Avoid horizontal scroll on body due to toolbar */
+:host { display: block; }

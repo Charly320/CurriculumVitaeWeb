@@ -16,6 +16,6 @@ export class AboutMeComponent {
   get name(): string { return this.profileService.personalInfo().name; }
   get role(): string { return this.profileService.personalInfo().title; }
   get location(): string { return 'Santiago, Chile'; }
-  get avatar(): string { return 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=480&auto=format&fit=crop'; }
+  get avatar(): string { return 'assets/img/yo.jpeg'; }
   get aboutText(): string { return this.profileService.personalInfo().aboutMe; }
 }

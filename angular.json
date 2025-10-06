@@ -13,6 +13,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/CurriculumVitaeWeb",
+            "baseHref": "/CurriculumVitaeWeb/",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -32,6 +34,7 @@
           },
           "configurations": {
             "production": {
+              "outputMode": "static",
               "budgets": [
                 {
                   "type": "initial",
