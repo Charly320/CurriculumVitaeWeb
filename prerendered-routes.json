@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/CurriculumVitaeWeb": {},
+    "/CurriculumVitaeWeb/about": {},
+    "/CurriculumVitaeWeb/contact": {},
+    "/CurriculumVitaeWeb/education": {},
+    "/CurriculumVitaeWeb/experience": {},
+    "/CurriculumVitaeWeb/skills": {}
+  }
+}
