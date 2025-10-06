@@ -5,8 +5,11 @@
 
   <a class="brand" routerLink="/about">
     <span class="dot"></span>
-    <span class="name">{{ name }}</span>
-    <span class="muted" style="margin-left:.5rem;color:var(--muted);font-weight:500">— {{ title }}</span>
+    <span class="name marquee">
+      <span class="marquee-track">
+        {{ name }} — {{ subtitle }}
+      </span>
+    </span>
   </a>
 
   <span class="spacer"></span>
@@ -22,7 +25,7 @@
   <button mat-icon-button [matMenuTriggerFor]="langMenu" aria-label="Language">
     <mat-icon>translate</mat-icon>
   </button>
-  <mat-menu #langMenu="matMenu">
+  <mat-menu #langMenu="matMenu" class="lang-menu">
     <button mat-menu-item (click)="changeLanguage('en')">English</button>
     <button mat-menu-item (click)="changeLanguage('es')">Español</button>
   </mat-menu>

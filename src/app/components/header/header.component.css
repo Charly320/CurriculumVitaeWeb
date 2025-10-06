@@ -17,7 +17,15 @@
 
 @media (max-width: 899px) {
   .cv-toolbar { justify-content: center; }
-  .brand { flex: 1; justify-content: center; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .brand { flex: 1; justify-content: center; text-align: center; overflow: hidden; }
+  .brand .name { display: inline-block; max-width: 70vw; overflow: hidden; }
+  /* Marquee effect: only on small screens to reveal long text */
+  .brand .marquee { position: relative; display: inline-block; width: 70vw; mask-image: linear-gradient(90deg, transparent 0, #0006 5%, #000 15%, #000 85%, #0006 95%, transparent 100%); }
+  .brand .marquee-track { display: inline-block; white-space: nowrap; will-change: transform; animation: marquee-scroll 18s linear infinite; padding-inline: 1rem; }
+  @keyframes marquee-scroll {
+    0% { transform: translateX(10%); }
+    100% { transform: translateX(-100%); }
+  }
   .spacer { display: none; }
   /* Keep language button visible on the right without pushing layout */
   [mat-menu-trigger-for], [matmenutriggerfor] { margin-left: auto; }
@@ -40,3 +48,14 @@
 
 /* Avoid horizontal scroll on body due to toolbar */
 :host { display: block; }
+
+/* Language menu background to avoid transparency */
+/* Target Angular Material menu surface */
+.cdk-overlay-container .lang-menu .mdc-menu-surface,
+.cdk-overlay-container .mdc-menu-surface.lang-menu,
+.lang-menu .mdc-menu-surface {
+  background: rgba(15, 23, 42, .95) !important;
+  color: var(--text) !important;
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: saturate(120%) blur(8px);
+}

@@ -24,6 +24,12 @@ export class HeaderComponent {
   get lang() { return this.translate.lang; }
   get name() { return this.profile.personalInfo().name; }
   get title() { return this.profile.personalInfo().title; }
+  // Show only the last segment after comma to drop prefixes like "Software Developer, "
+  get subtitle() {
+    const t = this.title || '';
+    const parts = t.split(',');
+    return parts[parts.length - 1].trim();
+  }
 
   changeLanguage(code: 'en' | 'es') {
     this.translate.setLang(code);
