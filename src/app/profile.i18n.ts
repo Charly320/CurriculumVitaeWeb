@@ -98,14 +98,17 @@ export const PROFILE_ES: ProfileData = {
     }
   ],
   skills: [
-    'C#',
-    'Oracle SQL',
-    'PL/SQL',
-    'Angular',
-    'APIs REST',
-    'Trabajo en equipo',
-    'Transformación digital',
-    'Capacidad de análisis'
+    'PL/SQL (Oracle 11g / 19c)',
+    'SQL Avanzado',
+    'C# (.NET Framework / .NET)',
+    'Visual Basic .NET',
+    'JavaScript & TypeScript (Node.js / NestJS)',
+    'APIs REST (C# / NestJS)',
+    'Arquitectura de Servicios',
+    'Optimización y Rendimiento',
+    'Git, GitHub y Azure DevOps',
+    'Análisis y Lógica de Negocio',
+    'Scrum Master'
   ],
   certifications: [
     {
@@ -220,14 +223,17 @@ export const PROFILE_EN: ProfileData = {
     }
   ],
   skills: [
-    'C#',
-    'Oracle SQL',
-    'PL/SQL',
-    'Angular',
-    'REST APIs',
-    'Teamwork',
-    'Digital transformation',
-    'Analytical skills'
+    'PL/SQL (Oracle 11g / 19c)',
+    'Advanced SQL',
+    'C# (.NET Framework / .NET)',
+    'Visual Basic .NET',
+    'JavaScript & TypeScript (Node.js / NestJS)',
+    'REST APIs (C# / NestJS)',
+    'Service Architecture',
+    'Optimization & Performance',
+    'Git, GitHub & Azure DevOps',
+    'Business Logic Analysis',
+    'Scrum Master'
   ],
   certifications: [
     {
