@@ -1,0 +1,79 @@
+<section class="contact-section container">
+  <div class="contact-card">
+    <!-- Header -->
+    <div class="contact-header">
+      <div class="profile-photo">
+        <img src="assets/img/yo.jpeg" alt="Carlos Villagrán" class="profile-img">
+      </div>
+      <div class="header-info">
+        <h1 class="name">{{ name }}</h1>
+        <p class="title">{{ title }}</p>
+      </div>
+    </div>
+
+    <!-- Technologies -->
+    <div class="tech-stack">
+      <span class="tech-badge" *ngFor="let tech of contactInfo.technologies">{{ tech }}</span>
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+      <p>{{ description }}</p>
+    </div>
+
+    <!-- Contact Info Grid -->
+    <div class="contact-grid">
+      <div class="contact-item">
+        <mat-icon class="contact-icon">location_on</mat-icon>
+        <div class="contact-details">
+          <span class="contact-label">{{ 'contact.location' | translate }}</span>
+          <span class="contact-value">{{ contactInfo.location }}</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <mat-icon class="contact-icon">email</mat-icon>
+        <div class="contact-details">
+          <span class="contact-label">{{ 'contact.email_label' | translate }}</span>
+          <a href="mailto:{{ contactInfo.email }}" class="contact-value link">{{ contactInfo.email }}</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <mat-icon class="contact-icon">phone</mat-icon>
+        <div class="contact-details">
+          <span class="contact-label">{{ 'contact.phone' | translate }}</span>
+          <a href="tel:{{ contactInfo.phone }}" class="contact-value link">{{ contactInfo.phoneDisplay }}</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <mat-icon class="contact-icon">link</mat-icon>
+        <div class="contact-details">
+          <span class="contact-label">LinkedIn</span>
+          <a [href]="contactInfo.linkedin" target="_blank" rel="noopener noreferrer" class="contact-value link">
+            {{ 'contact.view_profile' | translate }}
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <mat-icon class="contact-icon">download</mat-icon>
+        <div class="contact-details">
+          <span class="contact-label">{{ 'contact.cv_download' | translate }}</span>
+          <a [href]="contactInfo.cvPdfUrl" download="CV_Carlos_Villagran_2026.pdf" class="contact-value link">
+            {{ 'contact.download_cv' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote-section">
+      <div class="quote-icon">
+        <mat-icon>format_quote</mat-icon>
+      </div>
+      <p class="quote-text">{{ quote }}</p>
+    </div>
+  </div>
+</section>

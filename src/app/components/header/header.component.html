@@ -19,15 +19,24 @@
     <a mat-button routerLink="/experience">{{ 'header.navigation.experience' | translate }}</a>
     <a mat-button routerLink="/skills">{{ 'header.navigation.skills' | translate }}</a>
     <a mat-button routerLink="/education">{{ 'header.navigation.education' | translate }}</a>
-    <a mat-stroked-button color="accent" routerLink="/contact">{{ 'header.navigation.contact' | translate }}</a>
+    <a mat-raised-button class="contact-button" routerLink="/contact">{{ 'header.navigation.contact' | translate }}</a>
+    <a mat-raised-button class="cv-button" href="assets/pdf/CV_Carlos_Villagran_2026.pdf" download="CV_Carlos_Villagran.pdf">
+      <mat-icon>download</mat-icon>
+      CV PDF
+    </a>
   </nav>
 
-  <button mat-icon-button [matMenuTriggerFor]="langMenu" aria-label="Language">
-    <mat-icon>translate</mat-icon>
+  <button mat-button [matMenuTriggerFor]="langMenu" aria-label="Language" class="lang-button">
+    <span class="flag">{{ lang === 'en' ? '🇺🇸/' : '🇪🇸/' }}</span>
+    <span class="lang-text">{{ lang === 'en' ? 'EN' : 'ES' }}</span>
   </button>
   <mat-menu #langMenu="matMenu" class="lang-menu">
-    <button mat-menu-item (click)="changeLanguage('en')">English</button>
-    <button mat-menu-item (click)="changeLanguage('es')">Español</button>
+    <button mat-menu-item (click)="changeLanguage('en')">
+      <span class="flag">US</span> English
+    </button>
+    <button mat-menu-item (click)="changeLanguage('es')">
+      <span class="flag">ES</span> Español
+    </button>
   </mat-menu>
 </mat-toolbar>
 
@@ -36,5 +45,9 @@
   <a routerLink="/experience" (click)="mobileOpen.set(false)">{{ 'header.navigation.experience' | translate }}</a>
   <a routerLink="/skills" (click)="mobileOpen.set(false)">{{ 'header.navigation.skills' | translate }}</a>
   <a routerLink="/education" (click)="mobileOpen.set(false)">{{ 'header.navigation.education' | translate }}</a>
-  <a routerLink="/contact" (click)="mobileOpen.set(false)">{{ 'header.navigation.contact' | translate }}</a>
+  <a routerLink="/contact" (click)="mobileOpen.set(false)" class="contact-link">{{ 'header.navigation.contact' | translate }}</a>
+  <a href="assets/pdf/CV_Carlos_Villagran_2026.pdf" download="CV_Carlos_Villagran.pdf" (click)="mobileOpen.set(false)" class="cv-link">
+    <mat-icon>download</mat-icon>
+    CV PDF
+  </a>
 </div>

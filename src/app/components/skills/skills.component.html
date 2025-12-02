@@ -5,13 +5,21 @@
         <span class="dot dot-close"></span>
         <span class="dot dot-min"></span>
         <span class="dot dot-max"></span>
-        <div class="terminal-title"><mat-icon style="font-size:18px;vertical-align:middle;margin-right:.35rem">{{ card.icon }}</mat-icon>{{ card.name }}</div>
+        <div class="terminal-title">
+          <mat-icon style="font-size:18px;vertical-align:middle;margin-right:.35rem">{{ card.icon }}</mat-icon>
+          {{ card.name }}
+        </div>
       </div>
       <div class="terminal-body">
+        <div class="skill-category" *ngIf="card.category">
+          <span class="category-badge">{{ card.category }}</span>
+        </div>
         <div class="skill-line">
           <span class="prompt">$</span>
           <span class="cmd">info</span>
-          <span class="output">{{ card.description }}</span>
+        </div>
+        <div class="skill-output">
+          {{ card.description }}
         </div>
       </div>
     </div>

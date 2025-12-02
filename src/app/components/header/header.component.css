@@ -1,13 +1,14 @@
 .cv-toolbar {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(15, 23, 42, .75);
-  backdrop-filter: saturate(120%) blur(8px);
-  border-bottom: 1px solid rgba(255,255,255,.06);
+  background: linear-gradient(135deg, rgba(11, 18, 32, 0.95) 0%, rgba(21, 30, 47, 0.95) 100%);
+  backdrop-filter: saturate(120%) blur(12px);
+  border-bottom: 1px solid rgba(100,255,218,0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   display: flex; align-items: center; gap: .5rem;
   overflow: hidden;
 }
-.brand { display: inline-flex; align-items: center; gap: .6rem; color: var(--text); font-weight: 600; min-width: 0; }
-.brand .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--primary); box-shadow: 0 0 10px var(--primary); }
+.brand { display: inline-flex; align-items: center; gap: .6rem; color: #e5e7eb; font-weight: 600; min-width: 0; }
+.brand .dot { width: 10px; height: 10px; border-radius: 999px; background: #64ffda; box-shadow: 0 0 15px rgba(100,255,218,0.6); }
 .spacer { flex: 1; min-width: .5rem; }
 .links { display: none; gap: .25rem; }
 .only-mobile { display: inline-flex; }
@@ -49,13 +50,104 @@
 /* Avoid horizontal scroll on body due to toolbar */
 :host { display: block; }
 
+/* Language button styling */
+.lang-button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+
+.flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.lang-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
 /* Language menu background to avoid transparency */
 /* Target Angular Material menu surface */
 .cdk-overlay-container .lang-menu .mdc-menu-surface,
 .cdk-overlay-container .mdc-menu-surface.lang-menu,
 .lang-menu .mdc-menu-surface {
-  background: rgba(15, 23, 42, .95) !important;
-  color: var(--text) !important;
-  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(135deg, #0b1220 0%, #151e2f 100%) !important;
+  color: #e5e7eb !important;
+  border: 1px solid rgba(100,255,218,0.3) !important;
   backdrop-filter: saturate(120%) blur(8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.lang-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Contact Button Styling */
+.contact-button {
+  background: linear-gradient(135deg, #64ffda 0%, #0ea5e9 100%) !important;
+  color: #0b1220 !important;
+  font-weight: 600 !important;
+  box-shadow: 0 0 15px rgba(100,255,218,0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #86efac 0%, #22c55e 100%) !important;
+  box-shadow: 0 0 25px rgba(100,255,218,0.6) !important;
+  transform: translateY(-2px);
+}
+
+/* CV PDF Button Styling */
+.cv-button {
+  background: rgba(100,255,218,0.1) !important;
+  color: #64ffda !important;
+  border: 2px solid #64ffda !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.cv-button:hover {
+  background: rgba(100,255,218,0.2) !important;
+  box-shadow: 0 0 15px rgba(100,255,218,0.4) !important;
+  transform: translateY(-2px);
+}
+
+.cv-button mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile drawer contact and CV links */
+.mobile-drawer .contact-link {
+  background: linear-gradient(135deg, #64ffda 0%, #0ea5e9 100%);
+  color: #0b1220;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(100,255,218,0.3);
+}
+
+.mobile-drawer .cv-link {
+  background: rgba(100,255,218,0.1);
+  color: #64ffda;
+  border: 2px solid #64ffda;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.mobile-drawer .cv-link mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
 }

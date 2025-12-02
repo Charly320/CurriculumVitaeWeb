@@ -29,7 +29,7 @@ a:hover { color: white; }
 
 /* Layout helpers */
 .container {
-	width: min(1100px, 100% - 2rem);
+	width: min(1400px, 100% - 4rem);
 	margin-inline: auto;
 }
 
@@ -73,10 +73,27 @@ a:hover { color: white; }
 }
 
 /* Toolbar spacing below header */
-main { padding: 1rem; }
+main { padding: 2rem 1rem; }
 
 /* Angular Material theme overrides */
 .mat-toolbar.mat-primary { background: linear-gradient(90deg, var(--surface-2) 0%, #0b2540 100%); color: var(--text); }
 .mat-mdc-raised-button.mat-primary, .mat-mdc-unelevated-button.mat-primary { --mdc-filled-button-container-color: var(--primary); }
 .mat-mdc-stroked-button.mat-accent { --mdc-outlined-button-outline-color: var(--accent); color: var(--accent); }
+
+/* Language Modal Overlay */
+.language-modal-overlay .mat-mdc-dialog-container {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.language-modal-overlay .mat-mdc-dialog-surface {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}
 

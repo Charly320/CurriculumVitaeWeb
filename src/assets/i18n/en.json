@@ -12,7 +12,13 @@
   },
   "aboutMe": {
     "title": "About Me",
-    "content": "I am a software engineer with experience building web applications."
+    "content": "I am a software engineer with experience building web applications.",
+    "highlights": {
+      "experience": "8+ years building SPAs and design systems.",
+      "migrations": "Lead Angular migrations and performance tuning.",
+      "mentoring": "Mentor teams, code reviews, and DX improvements."
+    },
+    "builtWith": "This site was built with:"
   },
   "experience": {
     "title": "Experience",
@@ -32,6 +38,12 @@
   },
   "contact": {
     "title": "Contact",
-    "email": "john.doe@example.com"
+    "email": "john.doe@example.com",
+    "location": "Location",
+    "email_label": "Email",
+    "phone": "Phone",
+    "view_profile": "View profile",
+    "cv_download": "Download CV",
+    "download_cv": "Download PDF"
   }
 }

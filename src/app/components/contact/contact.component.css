@@ -1,0 +1,278 @@
+/* Container */
+.contact-section {
+  margin: 0 auto 3rem;
+  padding: 0 1rem 3rem;
+  max-width: 1200px;
+}
+
+/* Main card */
+.contact-card {
+  background: linear-gradient(135deg, #0b1220 0%, #151e2f 100%);
+  border: 1px solid rgba(100,255,218,0.2);
+  border-radius: 16px;
+  padding: 4rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  font-family: 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
+}
+
+/* Header */
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(100,255,218,0.2);
+}
+
+.profile-photo {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #64ffda;
+  box-shadow: 0 0 20px rgba(100,255,218,0.4), 0 0 40px rgba(100,255,218,0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(100,255,218,0.6), 0 0 60px rgba(100,255,218,0.3);
+}
+
+.header-info {
+  flex: 1;
+}
+
+.name {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #64ffda;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background: rgba(100,255,218,0.1);
+  border: 1px solid rgba(100,255,218,0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #64ffda;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: rgba(100,255,218,0.2);
+  border-color: rgba(100,255,218,0.5);
+  transform: translateY(-2px);
+}
+
+/* Description */
+.description {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.2);
+  border-left: 3px solid #64ffda;
+  border-radius: 8px;
+}
+
+.description p {
+  margin: 0;
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: rgba(100,255,218,0.05);
+  border: 1px solid rgba(100,255,218,0.15);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(100,255,218,0.1);
+  border-color: rgba(100,255,218,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-icon {
+  color: #64ffda;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 1rem;
+  color: #e5e7eb;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.contact-value.link {
+  color: #64ffda;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.contact-value.link:hover {
+  color: #86efac;
+  text-decoration: underline;
+}
+
+/* Quote Section */
+.quote-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(100,255,218,0.05), rgba(100,255,218,0.02));
+  border: 1px solid rgba(100,255,218,0.2);
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.quote-icon {
+  flex-shrink: 0;
+}
+
+.quote-icon mat-icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+  color: #64ffda;
+  opacity: 0.6;
+}
+
+.quote-text {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #64ffda;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .quote-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+}

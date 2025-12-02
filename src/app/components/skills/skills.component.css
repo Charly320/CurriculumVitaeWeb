@@ -1,38 +1,149 @@
 /* Container */
-.skills-section { margin: 2rem auto; }
+.skills-section { margin: 0 auto 2rem; padding: 0 1rem 1rem; }
 
 /* Grid of terminal windows */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.skills-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+  gap: 24px; 
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 /* Terminal look & feel (matching About Me / Experience) */
 .terminal-window {
   border-radius: 12px;
-  background: #0b1220;
+  background: linear-gradient(135deg, #0b1220 0%, #151e2f 100%);
   color: #e5e7eb;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  border: 1px solid rgba(100,255,218,0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45), 0 0 0 1px rgba(100,255,218,0.1);
   font-family: 'Fira Code', 'Source Code Pro', 'Courier New', monospace;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+
+.terminal-window:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(100,255,218,0.3);
+  border-color: rgba(100,255,218,0.3);
+}
+
 .terminal-header {
-  display: flex; align-items: center; gap: .5rem;
-  height: 40px; padding: 0 .75rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  display: flex; 
+  align-items: center; 
+  gap: .5rem;
+  height: 48px; 
+  padding: 0 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(100,255,218,0.08), rgba(100,255,218,0.02));
 }
-.terminal-title { margin-left: auto; font-size: .95rem; color: #cbd5e1; display: flex; align-items: center; }
-.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
+.terminal-title { 
+  margin-left: auto; 
+  font-size: 1.05rem; 
+  color: #cbd5e1; 
+  display: flex; 
+  align-items: center;
+  font-weight: 500;
+}
+
+.dot { 
+  width: 12px; 
+  height: 12px; 
+  border-radius: 50%; 
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
 .dot-close { background: #ff5f56; }
 .dot-min { background: #ffbd2e; }
 .dot-max { background: #27c93f; }
-.terminal-body { padding: 1rem; }
+
+.terminal-window:hover .dot {
+  opacity: 0.8;
+}
+
+.terminal-body { 
+  padding: 1.5rem; 
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* Category badge */
+.skill-category {
+  margin-bottom: 0.5rem;
+}
+
+.category-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #64ffda;
+  background: rgba(100,255,218,0.1);
+  border: 1px solid rgba(100,255,218,0.3);
+  padding: 0.3rem 0.85rem;
+  border-radius: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 
 /* Line styling inside terminal */
-.skill-line { display: flex; gap: .5rem; align-items: baseline; }
-.prompt { color: #22c55e; }
-.cmd { color: #86efac; }
-.output { color: #e5e7eb; }
+.skill-line { 
+  display: flex; 
+  gap: .5rem; 
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.prompt { 
+  color: #22c55e; 
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cmd { 
+  color: #86efac; 
+  font-weight: 600;
+}
+
+.skill-output { 
+  color: #cbd5e1; 
+  line-height: 1.7;
+  font-size: 0.98rem;
+  padding-left: 1.5rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .skills-grid { 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px; 
+  }
+  
+  .terminal-body {
+    padding: 1rem;
+    min-height: 120px;
+  }
+
+  .skill-output {
+    font-size: 0.85rem;
+    padding-left: 1rem;
+  }
+}
 
 @media (max-width: 420px) {
-  .skills-grid { gap: 12px; }
+  .skills-grid { 
+    grid-template-columns: 1fr;
+    gap: 12px; 
+  }
+  
+  .terminal-window {
+    margin: 0 0.5rem;
+  }
+  
+  .category-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
 }

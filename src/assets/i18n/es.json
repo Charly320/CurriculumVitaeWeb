@@ -12,7 +12,13 @@
   },
   "aboutMe": {
     "title": "Sobre mí",
-    "content": "Soy un ingeniero de software con experiencia construyendo aplicaciones web."
+    "content": "Soy un ingeniero de software con experiencia construyendo aplicaciones web.",
+    "highlights": {
+      "experience": "8+ años construyendo SPAs y sistemas de diseño.",
+      "migrations": "Líder en migraciones de Angular y optimización de rendimiento.",
+      "mentoring": "Mentor de equipos, revisiones de código y mejoras de DX."
+    },
+    "builtWith": "Este sitio fue construido con:"
   },
   "experience": {
     "title": "Experiencia",
@@ -32,6 +38,12 @@
   },
   "contact": {
     "title": "Contacto",
-    "email": "juan.perez@example.com"
+    "email": "juan.perez@example.com",
+    "location": "Ubicación",
+    "email_label": "Correo electrónico",
+    "phone": "Teléfono",
+    "view_profile": "Ver perfil",
+    "cv_download": "Descargar CV",
+    "download_cv": "Descargar PDF"
   }
 }

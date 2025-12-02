@@ -10,50 +10,75 @@ export const PROFILE_ES: ProfileData = {
   experience: [
     {
       company: 'Isapre Banmédica',
+      icon: '🏢',
       role: 'Desarrollador Full Stack Senior',
       period: 'jul. 2025 - actualidad',
       location: 'Las Condes, Región Metropolitana de Santiago, Chile',
       type: 'Híbrido',
-      description: ''
+      description: 'Desarrollo y mantenimiento de sistemas internos, creación de APIs, optimización de procesos backend y apoyo técnico a equipos de desarrollo.'
     },
     {
       company: 'Isapre Consalud',
-      role: 'Desarrollador sénior',
+      icon: '🏥',
+      role: 'Desarrollador Sénior Back-End',
       period: 'ago. 2021 - jun. 2025',
       location: 'Santiago, Región Metropolitana de Santiago, Chile',
-      description: ''
+      description: 'Desarrollo de soluciones backend, optimización de bases de datos, creación de servicios y soporte a sistemas críticos de la organización.'
     },
     {
       company: 'Ejército de Chile',
-      role: 'Ingeniero en informática',
+      icon: '🪖',
+      role: 'Ingeniero en Informática',
       period: 'ene. 2018 - oct. 2021',
       location: 'Santiago, Región Metropolitana de Santiago, Chile',
-      description: ''
+      description: 'Desarrollo y mantenimiento de aplicaciones internas, gestión de bases de datos y soporte a sistemas institucionales.'
     },
     {
       company: 'Stericycle',
-      role: 'Desarrollador',
+      icon: '♻️',
+      role: 'Desarrollador / QA Tester',
       period: 'jul. 2016 - jul. 2017',
       location: 'Provincia de Valparaíso - Viña del mar, Chile',
-      description:
-        'QA Tester del Core Business creado en C# + SQL Server 2014/2016, coordinador de Keys User y comunicación de los problemas detectados por la empresa hacia los desarrolladores. Apoyo en el área de IS - Sistemas de la empresa desarrollando funciones y mejoras en el actual Core Business bajo el lenguaje de programación PHP + Oracle.'
+      description: 'Seguimiento de aplicaciones construidas en el extranjero realizando validaciones como QA Tester.'
     },
     {
       company: 'Falabella Retail',
-      role: 'Vendedor de computación y electrónica',
+      icon: '🛒',
+      role: 'Vendedor de Computación y Electrónica',
       period: 'ago. 2013 - ene. 2016',
       location: 'Chillán, Chile',
-      description:
-        'Vendedor del área de computación y electrónica, amplio conocimiento en la venta de tangibles e intangibles con más de dos años de experiencia.'
+      description: 'Asesoría a clientes, venta de productos electrónicos, apoyo en retail y cumplimiento de metas comerciales.'
     }
   ],
   education: [
     {
-      institution: 'INACAP',
-      degree: 'Ingeniero en Informática',
-      period: '2011 - 2016',
+      institution: 'Microsoft / Universidad Tecnológica de Chile',
+      degree: 'Estudiante de Ingenieria',
+      period: '2011 - 2015',
       activities:
-        'Microsoft Student Partner (MSP) 2011–2015, expositor de nuevas tecnologías Microsoft, desarrollo de apps Windows 8.1 en C# y XAML, desarrollo de apps móviles Xamarin C#, guía en taller Microsoft Virtual Academy, representante Active Manager Microsoft Office 365 2015.'
+        'Microsoft Student Partner (MSP) 2011–2015, expositor de nuevas tecnologías Microsoft, guía en Microsoft Virtual Academy y representante Active Manager Microsoft Office 365 año 2015.'
+    },
+    {
+      institution: 'Universidad Tecnológica de Chile',
+      degree: 'Titulado Ingeniero en Informática',
+      period: '2011 - 2016',
+      activities: ''
+    },
+    {
+      institution: 'Oracle',
+      degree: 'Oracle Database 12c R2: SQL and PL/SQL Fundamentals Ed 2 LVC PRV',
+      period: 'oct. 2020',
+      activities: 'ID de la credencial: 9491118'
+    },
+    {
+      institution: 'CertiProf',
+      degree: 'SCRUM FOUNDATION PROFESSIONAL CERTIFICATE',
+      period: 'abr. 2019',
+      activities: 'ID de la credencial: 31555371673312'
+    },
+    {
+      institution: 'keep learning',
+      degree: 'Contabilidad básica'
     },
     {
       institution: 'Universidad Tecnológica de Chile, Sede Chillán',
@@ -109,50 +134,75 @@ export const PROFILE_EN: ProfileData = {
   experience: [
     {
       company: 'Isapre Banmédica',
+      icon: '🏢',
       role: 'Senior Full‑stack Developer',
       period: 'Jul. 2025 – Present',
       location: 'Las Condes, Santiago Metropolitan Region, Chile',
       type: 'Hybrid',
-      description: ''
+      description: 'Development and maintenance of internal systems, API creation, backend process optimization and technical support to development teams.'
     },
     {
       company: 'Isapre Consalud',
-      role: 'Senior Developer',
+      icon: '🏥',
+      role: 'Senior Back-End Developer',
       period: 'Aug. 2021 – Jun. 2025',
       location: 'Santiago, Santiago Metropolitan Region, Chile',
-      description: ''
+      description: 'Backend solutions development, database optimization, service creation and support for critical organizational systems.'
     },
     {
       company: 'Ejército de Chile (Chilean Army)',
+      icon: '🪖',
       role: 'Computer Engineer',
       period: 'Jan. 2018 – Oct. 2021',
       location: 'Santiago, Santiago Metropolitan Region, Chile',
-      description: ''
+      description: 'Development and maintenance of internal applications, database management and support for institutional systems.'
     },
     {
       company: 'Stericycle',
-      role: 'Developer',
+      icon: '♻️',
+      role: 'Developer / QA Tester',
       period: 'Jul. 2016 – Jul. 2017',
       location: 'Valparaíso Province – Viña del Mar, Chile',
-      description:
-        'QA Tester for the Core Business built in C# + SQL Server 2014/2016; coordinator for Key Users and communication of issues detected by the company to developers. Supported the IS – Systems area implementing features and improvements to the current Core Business using PHP + Oracle.'
+      description: 'Tracking applications built abroad performing validations as QA Tester.'
     },
     {
       company: 'Falabella Retail',
+      icon: '🛒',
       role: 'Computing and Electronics Sales Associate',
       period: 'Aug. 2013 – Jan. 2016',
       location: 'Chillán, Chile',
-      description:
-        'Sales associate in computing and electronics with broad experience selling both tangible and intangible products for more than two years.'
+      description: 'Customer advisory, electronics sales, retail support and commercial goals achievement.'
     }
   ],
   education: [
     {
-      institution: 'INACAP',
-      degree: 'Computer Engineer',
-      period: '2011 – 2016',
+      institution: 'Microsoft / Universidad Tecnológica de Chile',
+      degree: 'Engineering Student',
+      period: '2011 – 2015',
       activities:
-        'Microsoft Student Partner (MSP) 2011–2015; presenter on new Microsoft technologies; Windows 8.1 apps in C# and XAML; Xamarin mobile apps in C#; instructor at Microsoft Virtual Academy workshops; Active Manager representative for Microsoft Office 365 in 2015.'
+        'Microsoft Student Partner (MSP) 2011–2015; presenter on new Microsoft technologies; instructor at Microsoft Virtual Academy workshops and Active Manager representative for Microsoft Office 365 in 2015.'
+    },
+    {
+      institution: 'Universidad Tecnológica de Chile',
+      degree: 'Computer Engineer Graduate',
+      period: '2011 – 2016',
+      activities: ''
+    },
+    {
+      institution: 'Oracle',
+      degree: 'Oracle Database 12c R2: SQL and PL/SQL Fundamentals Ed 2 LVC PRV',
+      period: 'Oct. 2020',
+      activities: 'Credential ID: 9491118'
+    },
+    {
+      institution: 'CertiProf',
+      degree: 'SCRUM FOUNDATION PROFESSIONAL CERTIFICATE',
+      period: 'Apr. 2019',
+      activities: 'Credential ID: 31555371673312'
+    },
+    {
+      institution: 'keep learning',
+      degree: 'Basic Accounting'
     },
     {
       institution: 'Universidad Tecnológica de Chile, Chillán Campus',
