@@ -30,7 +30,7 @@ export class ProfileService {
 		// attempt override from assets if http available (browser runtime)
 		if (this.http && isPlatformBrowser(this.platformId)) {
 			try {
-				const url = `/assets/data/profile.${lang}.json`;
+				const url = `assets/data/profile.${lang}.json`;
 				const res = await firstValueFrom(this.http.get<ProfileData>(url));
 				if (res) this.data.set(res);
 			} catch {

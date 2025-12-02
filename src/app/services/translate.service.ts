@@ -40,7 +40,7 @@ export class TranslateService {
 
 			// Fallback: try to fetch from assets (browser runtime) if HttpClient available
 			if (this.http) {
-				const url = `/assets/i18n/${lang}.json`;
+				const url = `assets/i18n/${lang}.json`;
 				const res = await firstValueFrom(this.http.get<Translations>(url));
 				this.translations.set(res || {});
 			} else {
